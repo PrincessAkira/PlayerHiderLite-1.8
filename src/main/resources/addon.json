@@ -1,0 +1,10 @@
+{
+  "uuid": "%uuid%",
+  "name": "PlayerHider Lite",
+  "mainClass": "meow.sarah.patootie.Sarah",
+  "description": "This addon allows you to hide players from your view.",
+  "version": 1.0,
+  "author": "liebesschwur",
+  "category": 2,
+  "icon": "https://i.imgur.com/B6xOu9G.png"
+}
