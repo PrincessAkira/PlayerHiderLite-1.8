@@ -1,7 +1,7 @@
 # PlayerHider-1.8
 
-An Labymod Addon to hide players from view and VoiceChat.
-Doesnt work on Vanilla Version, due to the event not implemented. Use with Labymod + Forge.
+An Labymod Addon to hide players from your View.
+Lite Version does not support VoiceChat!
 
 [![Build Addon](https://github.com/PrincessAkira/PlayerHider-1.8/actions/workflows/release.yml/badge.svg)](https://github.com/PrincessAkira/PlayerHider-1.8/actions/workflows/release.yml)
 
