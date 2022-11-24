@@ -14,8 +14,8 @@ apply plugin: 'net.minecraftforge.gradle.forge'
 
 version = "1.0"
 
-group = "meow.emily.patootie"
-archivesBaseName = "PlayerHider"
+group = "meow.sarah.patootie"
+archivesBaseName = "PlayerHiderLite"
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
@@ -44,5 +44,5 @@ reobf {
 jar {
     // Excludes the start file
     exclude("**/launch")
-    archiveName = "PlayerHider-1.8.jar"
+    archiveName = "PlayerHiderLite-1.8.jar"
 }

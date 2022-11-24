@@ -3,7 +3,7 @@ name: Build Addon & Create Release
 on:
   push:
     branches:
-      - 1.8
+      - main
 
 jobs:
   build:
