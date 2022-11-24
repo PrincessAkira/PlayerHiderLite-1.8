@@ -29,7 +29,6 @@ public class Utils {
 
     public static void SetConfig(Boolean answer) {
         instance.setRenderPlayers(answer);
-        instance.setMuted(answer);
         instance.saveConfig();
     }
 
