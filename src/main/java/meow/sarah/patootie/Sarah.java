@@ -24,8 +24,6 @@ public class Sarah extends LabyModAddon {
     public Map<UUID, Integer> playersToRender = new HashMap<>();
     private boolean renderPlayers;
     private boolean modOn;
-    private boolean muted = false;
-    private boolean playerUnmute = false;
     private boolean configMessage = true;
     private List<String> playersToRenderString = new ArrayList<>();
 
@@ -58,7 +56,6 @@ public class Sarah extends LabyModAddon {
                     public void execute(User user, EntityPlayer entityPlayer, NetworkPlayerInfo networkPlayerInfo) {
                         try {
                             UUID uuid = networkPlayerInfo.getGameProfile().getId();
-                            //LabyMod.getInstance().displayMessageInChat(networkPlayerInfo.getGameProfile().getId().toString());
                             playersToRender.put(networkPlayerInfo.getGameProfile().getId(), 0);
                             savePlayersToRender();
                             playersToRenderString.add(networkPlayerInfo.getGameProfile().getName());
@@ -193,13 +190,6 @@ public class Sarah extends LabyModAddon {
         saveConfig();
     }
 
-    /* public void  listToMap(EntityPlayer user) {
-        // convert list to map
-        playersToRenderString.forEach(player -> {
-            playersToRender.put(user.getUniqueID(), 0);    // add player to map
-        });
-    } */
-
     private LabyMod labyMod() {
         return LabyMod.getInstance();
     }
@@ -242,23 +232,6 @@ public class Sarah extends LabyModAddon {
 
     public void setConfigMessage(boolean ConfigMessage) {
         this.configMessage = ConfigMessage;
-    }
-
-
-    public boolean isMuted() {
-        return muted;
-    }
-
-    public void setMuted(boolean muted) {
-        this.muted = muted;
-    }
-
-    public boolean isPlayerUnmute() {
-        return playerUnmute;
-    }
-
-    public void setPlayerUnmute(boolean playerUnmute) {
-        this.playerUnmute = playerUnmute;
     }
 
     public boolean isModOn() {
